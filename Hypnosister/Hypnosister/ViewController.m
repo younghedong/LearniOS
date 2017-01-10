@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#import "BNRHypnosisView.h"
+
+
 @interface ViewController ()
 
 @end
@@ -17,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CGRect firstFrame = [[UIScreen mainScreen] bounds];
+    BNRHypnosisView *firstView = [[BNRHypnosisView alloc]
+                                  initWithFrame:firstFrame];
+    [[self view] addSubview:firstView];
 }
 
 
